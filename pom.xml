@@ -11,7 +11,7 @@
 	<groupId>br.com.everis</groupId>
 	<artifactId>estacionamento</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>forum</name>
+	<name>estacionamento</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

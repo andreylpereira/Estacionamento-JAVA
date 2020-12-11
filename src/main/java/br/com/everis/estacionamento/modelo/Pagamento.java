@@ -12,10 +12,8 @@ public class Pagamento {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Long id;
-
 	@OneToOne
 	Estacionamento estacionamento;
-	String placa;
 	double valor;
 
 	@Override
@@ -43,11 +41,10 @@ public class Pagamento {
 		return true;
 	}
 
-	public Pagamento(Long id, Estacionamento estacionamento, String placa, double valor) {
+	public Pagamento(Long id, Estacionamento estacionamento, double valor) {
 		super();
 		this.id = id;
 		this.estacionamento = estacionamento;
-		this.placa = placa;
 		this.valor = valor;
 	}
 
@@ -57,14 +54,6 @@ public class Pagamento {
 
 	public void setId(Long id) {
 		this.id = id;
-	}
-
-	public String getPlaca() {
-		return placa;
-	}
-
-	public void setPlaca(String placa) {
-		this.placa = placa;
 	}
 
 	public double getValor() {
@@ -82,7 +71,5 @@ public class Pagamento {
 	public void setEstacionamento(Estacionamento estacionamento) {
 		this.estacionamento = estacionamento;
 	}
-
-
 
 }
